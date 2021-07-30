@@ -423,6 +423,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .founders {
+        padding-bottom: 40px;
+    }
     .founders__content {
         max-width: 60%;
     }
