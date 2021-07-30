@@ -151,7 +151,7 @@ body {
         background: url(../img/circle-back.svg) left 70px bottom -50px / 750px no-repeat, #1822B7 url(../img/circle-back_1.svg) right 120px top 150px / 388px no-repeat;
     }
     .first__content {
-        min-height: 500px;
+        min-height: 460px;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
