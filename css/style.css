@@ -1,18 +1,21 @@
 body {
     margin: 0;
-    /* font-size: 14px; */
     font-family: "RF Dewi", serif;
-    font-weight: 400;
 }
 
 .section {
-    padding: 0 15px 20px;
+    padding: 24px 20px 0;
 }
 
 .first {
+    padding-bottom: 96px;
     color: white;
-    height: 100vh;
-    background: url('../img/circle-back_1.svg') right -150px top 80% / 300px no-repeat, #1822B7 url('../img/circle-back.svg') center top 15% / 320px no-repeat;
+    background: url('../img/circle-back_1.svg') right -153px top 323px / 267px no-repeat, #1822B7 url('../img/circle-back.svg') center top 71px / 320px no-repeat;
+}
+
+.first__number {
+    font-weight: 700;
+    font-size: 12px;
 }
 
 .first__comp {
@@ -28,7 +31,8 @@ body {
 }
 
 .firs__leng {
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 9px;
     border: #fff solid 1px;
     border-radius: 50%;
     margin-right: 10px;
@@ -37,11 +41,7 @@ body {
 }
 
 .first__content {
-    margin-top: 125px;
-}
-
-.first__header {
-    padding-top: 20px;
+    margin-top: 135px;
 }
 
 .first__logo {
@@ -56,24 +56,26 @@ body {
 
 .first__subtitle {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+    font-weight: 600;
+    line-height: 110%;
 }
 
 .first__title {
     word-wrap: break-word;
-    font-size: 38px;
+    font-size: 38.7px;
+    line-height: 42px;
     text-transform: uppercase;
     font-weight: 900;
     margin-top: 0;
 }
 
-.first__list {
-    padding-right: 115px;
-}
-
 .first__item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
     color: rgba(255, 255, 255, .7);
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .first__strong {
@@ -89,56 +91,51 @@ body {
         margin-right: auto;
     }
     .first__header {
+        margin-top: 10px;
         display: flex;
         justify-content: space-between;
     }
     .header__img {
-        margin-left: 10px;
+        margin-left: 14px;
     }
     .first__comp {
         display: flex;
     }
     .first {
-        height: 620px;
-        background: url('../img/circle-back_1.svg') right 100px top 30% / 300px no-repeat, #1822B7 url('../img/circle-back.svg') left 10% bottom -30% / 530px no-repeat;
+        background: url('../img/circle-back-desk.svg') right 101px top 110px / 267px no-repeat, #1822B7 url('../img/circle-back.svg') left 10% bottom -50px / 530px no-repeat;
+        padding-bottom: 40px;
     }
     .first__content {
-        margin-top: 250px;
+        margin-top: 230px;
     }
     .first__subtitle {
-        font-size: 22px;
+        font-size: 24px;
+        line-height: 110%;
     }
     .first__title {
-        font-size: 56px;
+        font-size: 63px;
+        line-height: 110%;
         word-break: normal;
     }
     .first__list {
         display: flex;
-        padding-right: 0;
-        justify-content: space-between;
+    }
+    .first__item {
+        margin-right: 8%;
         position: relative;
     }
-    .first__list:before {
+    .first__item:nth-child(n+2):before {
         content: '';
         position: absolute;
-        width: 8px;
+        top: 50%;
+        left: -13%;
         height: 8px;
+        width: 8px;
         border-radius: 50%;
         top: 50%;
-        left: 31%;
+        left: -20%;
         background-color: rgba(255, 255, 255, 0.3);
-        margin-right: 20px;
-    }
-    .first__list:after {
-        content: '';
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        top: 50%;
-        left: 62%;
-        background-color: rgba(255, 255, 255, 0.3);
-        margin-right: 20px;
+        ;
     }
 }
 
@@ -147,24 +144,42 @@ body {
         font-size: 18px;
     }
     .first {
-        min-height: 100vh;
-        background: url(../img/circle-back.svg) left 70px bottom -50px / 750px no-repeat, #1822B7 url(../img/circle-back_1.svg) right 120px top 150px / 388px no-repeat;
-    }
-    .first__content {
-        min-height: 460px;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
+        min-height: 90px;
+        background: url(../img/circle-back.svg) left 70px bottom -50px / 751px no-repeat, #1822B7 url(../img/circle-back-desk_1.svg) right 120px top 150px / 388px no-repeat;
     }
     .section {
         padding: 40px 100px 0px;
+    }
+    .first__content {
+        margin-top: 400px;
+    }
+    .header__img {
+        width: 174px;
+    }
+    .first__number {
+        font-size: 14px;
+    }
+    .firs__leng {
+        font-style: 9px;
     }
     .section.section_box,
     .section__inside {
         max-width: 1200px;
     }
     .first__title {
-        font-size: 60px;
+        font-size: 90px;
+    }
+    .first__subtitle {
+        font-style: 32px;
+    }
+    .first__item {
+        font-size: 20px;
+    }
+    .first__list {}
+    .first__item:nth-child(n+2):before {
+        height: 12px;
+        width: 12px;
+        background-color: #EAA853;
     }
     .header__img:nth-child(2) {
         display: none;
@@ -172,19 +187,7 @@ body {
     .header__img:nth-child(3) {
         display: none;
     }
-    .first__list:after {
-        background-color: #EAA853;
-    }
-    .first__list:before {
-        background-color: #EAA853;
-    }
-    .first__list {
-        min-width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
 }
-
 
 
 /* 2 СЕКЦИЯ  */
@@ -193,54 +196,53 @@ body {
     line-height: 160%;
     color: #02020D;
     margin-bottom: 44px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .h2 {
     font-weight: 900;
     background: url(../img/h2circle.svg) left 0 top 70px / 67px no-repeat;
-    font-size: 32px;
-    margin-top: 44px;
-    padding-bottom: 50px;
+    font-size: 36px;
+    padding-bottom: 68px;
+    line-height: 120%;
 }
 
 .about__span {
     font-size: 24px;
-    line-height: 38px;
 }
 
 .about__gendir {
     font-size: 16px;
-    line-height: 160%;
 }
 
 .about__mission {
+    font-size: 14px;
+    line-height: 160%;
     border: 1px solid #E3A655;
     border-radius: 13px;
-    padding: 30px 20px;
+    padding: 35px 20px;
     margin-bottom: 50px;
 }
 
 .h3 {
     font-weight: 900;
-    font-size: 28px;
+    font-size: 33px;
     line-height: 100%;
     margin-top: 0;
 }
 
-.mission__p {
-    line-height: 160%;
-    margin-bottom: 20px;
-}
-
 @media (min-width: 768px) {
+    .about {
+        padding-top: 0;
+    }
     .about__company {
         display: flex;
         justify-content: space-between;
-        margin-top: 76px;
+        margin-top: 56px;
     }
     .about__text {
-        max-width: 500px;
-        padding-top: 40px;
+        padding-top: 25px;
     }
     .about__mission {
         padding: 50px 45px;
@@ -248,14 +250,53 @@ body {
     }
     .mission__content {
         max-width: 65%;
+        padding: 0 0 0 10px;
     }
     .h2 {
-        max-width: 40%;
+        max-width: 45%;
         white-space: nowrap;
         padding-right: 20px;
     }
+    .mission__h3 {
+        font-size: 33.56px;
+        line-height: 120%;
+    }
     .about__text {
-        max-width: 60%;
+        max-width: 55%;
+    }
+    .about__p:nth-child(2) {
+        padding-bottom: 20px;
+    }
+    .mission__p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .h2 {
+        font-size: 48px;
+        line-height: 120%;
+        background: url(../img/h2circle.svg) left 0 top 70px / 96px no-repeat;
+    }
+    .p {
+        font-size: 20px;
+    }
+    .span {
+        font-size: 32px;
+    }
+    .about__gendir {
+        font-size: 20px;
+    }
+    .h3 {
+        font-size: 48px;
+        line-height: 120%;
+    }
+    .mission {
+        padding: 73px 66px;
+    }
+    .mission__p {
+        margin-bottom: 37px;
+        font-size: 20px;
     }
 }
 
@@ -268,19 +309,21 @@ body {
 }
 
 .activity__h3 {
-    padding: 44px 20px 25px 20px;
+    font-size: 30px;
     margin-bottom: 0;
+    line-height: 120%;
+    padding-right: 10px;
 }
 
 .activity__object {
-    margin: 0 10px 20px;
+    font-size: 14px;
     margin-bottom: 45px;
 }
 
 .activity__item {
     padding-top: 86px;
     position: relative;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .activity__item:before {
@@ -342,6 +385,13 @@ body {
 }
 
 @media (min-width: 768px) {
+    .activity {
+        padding: 60px 40px;
+    }
+    .activity__h3 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
     .activity__object {
         display: flex;
         flex-wrap: wrap;
@@ -394,21 +444,39 @@ body {
     }
 }
 
-
-/* 4 СЕКЦИЯ */
-
-.founders__h2 {
-    margin-left: 20px;
+@media (min-width: 1024px) {
+    .h3 {
+        font-size: 48px;
+        font-weight: 120%;
+    }
+    .activity__object {
+        font-size: 20px;
+        background: #F3F4FB;
+        background: url('../img/activ-circle-desk.svg') right 70px bottom 0 / 284px 224px no-repeat;
+    }
+    .activity__item {
+        max-width: calc(32% - 30px);
+        margin-right: 30px;
+        padding-top: 132px;
+        margin-bottom: 20px;
+    }
+    .activity__item:before {
+        width: 112px;
+        height: 112px;
+        background: #fff center center / 54px 62px no-repeat;
+    }
 }
 
 .founders__span {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 23px;
+    line-height: 120%;
 }
 
 .founders__p {
-    margin-bottom: 30px;
+    line-height: 160%;
+    font-size: 15px;
+    margin-bottom: 44px;
 }
 
 @media (min-width: 768px) {
@@ -418,8 +486,13 @@ body {
         margin-top: 50px;
     }
     .founders__content {
-        max-width: 500px;
-        padding-top: 40px;
+        padding-top: 25px;
+    }
+    .founders__content {
+        max-width: 55%;
+    }
+    .founders__h2 {
+        max-width: 45%
     }
 }
 
@@ -430,8 +503,15 @@ body {
     .founders__content {
         max-width: 60%;
     }
+    .founders__p {
+        font-size: 20px;
+    }
     .founders__h2 {
         max-width: 40%
+    }
+    .founders__span {
+        font-size: 32px;
+        line-height: 120%;
     }
 }
 
@@ -449,6 +529,8 @@ body {
     align-items: center;
     flex-direction: column;
     color: rgba(2, 2, 13, 0.6);
+    font-size: 14px;
+    line-height: 110%;
 }
 
 .footer__2021 {
@@ -490,8 +572,8 @@ body {
 
 @font-face {
     font-family: 'RF Dewi';
-    src: local('RF Dewi Regular'), local('RF-Dewi-Regular'), url('../fonts/RFDewi-Regular.woff2') format('woff2');
-    font-weight: 400;
+    src: local('RF Dewi Bold'), local('RF-Dewi-Bold'), url('../fonts/RFDewi-Bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -504,14 +586,14 @@ body {
 
 @font-face {
     font-family: 'RF Dewi';
-    src: local('RF Dewi Bold'), local('RF-Dewi-Bold'), url('../fonts/RFDewi-Bold.woff2') format('woff2');
-    font-weight: 700;
+    src: local('RF Dewi Regular'), local('RF-Dewi-Regular'), url('../fonts/RFDewi-Regular.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'RF Dewi';
-    src: local('RF Dewi Semibold'), local('RF-Dewi-Semibold'), url('RFDewi-Semibold.woff2') format('woff2'), ;
+    src: local('RF Dewi Semibold'), local('RF-Dewi-Semibold'), url('../fonts/RFDewi-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
