@@ -4,7 +4,7 @@ body {
 }
 
 .section {
-    padding: 24px 20px 0;
+    padding: 24px 20px 40px;
 }
 
 .first {
@@ -148,7 +148,7 @@ body {
         background: url(../img/circle-back.svg) left 70px bottom -50px / 751px no-repeat, #1822B7 url(../img/circle-back-desk_1.svg) right 120px top 150px / 388px no-repeat;
     }
     .section {
-        padding: 40px 100px 0px;
+        padding: 40px 100px 96px;
     }
     .first__content {
         margin-top: 400px;
@@ -175,7 +175,6 @@ body {
     .first__item {
         font-size: 20px;
     }
-    .first__list {}
     .first__item:nth-child(n+2):before {
         height: 12px;
         width: 12px;
